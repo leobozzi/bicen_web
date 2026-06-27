@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biocen S.A. - Potenciando la Naturaleza</title>
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Biocen S.A. - Fabricación de coadyuvantes agrícolas de línea Domo y servicios de análisis agronómicos en Arroyito, Córdoba.">
+    <meta name="keywords" content="Biocen, agroquímicos, coadyuvantes, Domo Control, Domo Max, Domo Oleum, laboratorio agrícola, Arroyito, Córdoba">
+    <meta property="og:title" content="Biocen S.A. - Potenciando la Naturaleza">
+    <meta property="og:description" content="Coadyuvantes de precisión y análisis agronómicos de alta tecnología.">
+    <meta property="og:type" content="website">
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="stylesheet" href="style.css">
+    <!-- FontAwesome para Iconos Premium -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- CABECERA PRINCIPAL (DINÁMICA) -->
+    <header id="main-header" style="display: none;" role="banner">
+        <div class="nav-container">
+            <a href="#" class="logo-wrapper" id="nav-logo-link" aria-label="Ir al inicio">
+                <img id="header-logo" src="assets/logo2.png" alt="Biocen S.A.">
+            </a>
+            <nav aria-label="Navegación principal">
+                <ul class="nav-menu" id="nav-menu">
+                    <li class="nav-item" data-view="productos"><a href="#productos">Productos</a></li>
+                    <li class="nav-item" data-view="laboratorio"><a href="#laboratorio">Laboratorio</a></li>
+                    <li class="nav-item" data-view="nosotros"><a href="#nosotros">Nosotros</a></li>
+                    <li class="nav-item" data-view="contacto"><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+            <div class="nav-actions">
+                <button class="btn-portal-back" id="btn-portal-back" aria-label="Volver al portal">
+                    <i class="fa-solid fa-house"></i> <span class="btn-label">Portal</span>
+                </button>
+                <button class="hamburger" id="hamburger" aria-label="Abrir menú" aria-expanded="false">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- CONTENEDOR DE VISTAS (SPA) -->
+    <main>
+
+        <!-- ==================== VISTA 1: PORTAL DE ENTRADA (SPLIT SCREEN) ==================== -->
+        <section id="view-portal" class="view-section active" aria-label="Portal de entrada">
+            <!-- Deco top bar -->
+            <div class="portal-top-bar">
+                <img src="assets/logo2.png" alt="Biocen S.A." class="portal-top-logo">
+                <span class="portal-tagline">Potenciando la Naturaleza</span>
+            </div>
+
+            <!-- Columna Productos -->
+            <div class="portal-side portal-side-products" role="region" aria-label="Productos Agroquímicos">
+                <!-- Decorative dots -->
+                <div class="portal-deco portal-deco-dots" aria-hidden="true"></div>
+                <img src="assets/logo_biocen_prod.jpeg" alt="Biocen Productos" class="portal-logo">
+                <p class="portal-desc">
+                    Fabricamos coadyuvantes agrícolas de alta eficiencia para optimizar cada pulverización y proteger el entorno natural.
+                </p>
+                <button class="btn-portal" id="btn-go-products">
+                    <i class="fa-solid fa-seedling"></i> Explorar Productos
+                </button>
+                <div class="portal-stat-row">
+                    <div class="portal-stat"><strong>4</strong><span>Productos</span></div>
+                    <div class="portal-stat"><strong>+15</strong><span>Años de I+D</span></div>
+                </div>
+            </div>
+            
+            <div class="portal-divider" aria-hidden="true"></div>
+            
+            <!-- Columna Laboratorio -->
+            <div class="portal-side portal-side-lab" role="region" aria-label="Servicios de Laboratorio">
+                <div class="portal-deco portal-deco-lines" aria-hidden="true"></div>
+                <img src="assets/logo_biocen_lab.jpeg" alt="Biocen Laboratorio" class="portal-logo">
+                <p class="portal-desc">
+                    Análisis agronómicos de agua y semillas con precisión científica, para decisiones de campo basadas en datos reales.
+                </p>
+                <button class="btn-portal" id="btn-go-lab">
+                    <i class="fa-solid fa-flask"></i> Solicitar Análisis
+                </button>
+                <div class="portal-stat-row">
+                    <div class="portal-stat"><strong>2</strong><span>Análisis</span></div>
+                    <div class="portal-stat"><strong>24h</strong><span>Resultados</span></div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- ==================== VISTA 2: PRODUCTOS ==================== -->
+        <section id="view-productos" class="view-section">
+            <!-- Hero Banner -->
+            <div class="hero-banner">
+                <span class="badge">Unidad Agroquímicos</span>
+                <h1>Coadyuvantes de Precisión Tecnológica</h1>
+                <p>Nuestra línea Domo optimiza tus aplicaciones fitosanitarias reduciendo el escurrimiento, la evaporación y la deriva.</p>
+            </div>
+
+            <!-- Catálogo Grid -->
+            <div class="container">
+                <div class="section-title-wrapper">
+                    <h2 class="section-title">Nuestra Línea Domo</h2>
+                    <p class="section-subtitle">Productos diseñados para cada tipo de necesidad y calidad de agua.</p>
+                </div>
+                
+                <div class="product-grid">
+                    <!-- Producto 1: Domo Control -->
+                    <div class="product-card" id="prod-domo-control">
+                        <div class="product-icon"><i class="fa-solid fa-sliders"></i></div>
+                        <h3 class="product-name">Domo Control</h3>
+                        <span class="product-category">Secuestrante e Hidratante</span>
+                        <p class="product-tagline">Máximo control sobre la calidad del agua de pulverización.</p>
+                        
+                        <div class="product-tabs">
+                            <ul class="tab-nav">
+                                <li><button class="tab-btn active" data-tab="detalles">Detalles</button></li>
+                                <li><button class="tab-btn" data-tab="composicion">Composición</button></li>
+                                <li><button class="tab-btn" data-tab="aplicacion">Aplicación</button></li>
+                            </ul>
+                            <div class="tab-content-panel panel-detalles active">
+                                Corrige el pH y secuestra cationes de calcio y magnesio en aguas duras, evitando la inactivación de herbicidas. Modifica la tensión superficial mejorando la absorción foliar.
+                            </div>
+                            <div class="tab-content-panel panel-composicion">
+                                <ul>
+                                    <li>Alcoholes grasos etoxilados: 17 g/100 g</li>
+                                    <li>Agentes acidificantes: 50 g/100 g</li>
+                                    <li>Agua y aditivos inertes c.s.p. 100 g</li>
+                                </ul>
+                            </div>
+                            <div class="tab-content-panel panel-aplicacion">
+                                Recomendado para mezclas de glifosato y fitosanitarios con aguas de pozo o durezas superiores a 100 ppm. Dosis típica: 75 ml a 150 ml por cada 100 L de agua.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Producto 2: Domo Oleum -->
+                    <div class="product-card" id="prod-domo-oleum">
+                        <div class="product-icon"><i class="fa-solid fa-droplet"></i></div>
+                        <h3 class="product-name">Domo Oleum</h3>
+                        <span class="product-category">Anti-evaporante y Penetrante</span>
+                        <p class="product-tagline">Protección oleosa para una dispersión homogénea.</p>
+                        
+                        <div class="product-tabs">
+                            <ul class="tab-nav">
+                                <li><button class="tab-btn active" data-tab="detalles">Detalles</button></li>
+                                <li><button class="tab-btn" data-tab="composicion">Composición</button></li>
+                                <li><button class="tab-btn" data-tab="aplicacion">Aplicación</button></li>
+                            </ul>
+                            <div class="tab-content-panel panel-detalles active">
+                                Encapsula y protege las gotas fitosanitarias de la evaporación y la deriva por viento. Remueve eficazmente la cutícula cerosa de las malezas para acelerar la penetración.
+                            </div>
+                            <div class="tab-content-panel panel-composicion">
+                                <ul>
+                                    <li>Aceite vegetal metilado (soja): 88.2 g/100 ml</li>
+                                    <li>Emulsificantes y tensioactivos c.s.p. 100 ml</li>
+                                    <li>Clasificación toxicológica: Clase IV (Banda Verde)</li>
+                                </ul>
+                            </div>
+                            <div class="tab-content-panel panel-aplicacion">
+                                Ideal para aplicaciones en condiciones de alta temperatura y baja humedad relativa. Dosis típica: 1 L a 2 L por hectárea o según criterio agronómico.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Producto 3: Domo Max -->
+                    <div class="product-card" id="prod-domo-max">
+                        <div class="product-icon"><i class="fa-solid fa-bolt"></i></div>
+                        <h3 class="product-name">Domo Max</h3>
+                        <span class="product-category">Activador y Acondicionador</span>
+                        <p class="product-tagline">Sinergia de nitrógeno y azufre para optimizar herbicidas.</p>
+                        
+                        <div class="product-tabs">
+                            <ul class="tab-nav">
+                                <li><button class="tab-btn active" data-tab="detalles">Detalles</button></li>
+                                <li><button class="tab-btn" data-tab="composicion">Composición</button></li>
+                                <li><button class="tab-btn" data-tab="aplicacion">Aplicación</button></li>
+                            </ul>
+                            <div class="tab-content-panel panel-detalles active">
+                                Sulfato de amonio líquido de rápida asimilación. Acondiciona las aguas duras y aporta iones de amonio que potencian la absorción y translocación radical de los herbicidas.
+                            </div>
+                            <div class="tab-content-panel panel-composicion">
+                                <ul>
+                                    <li>Sulfato de amonio: 38 g/100 g</li>
+                                    <li>Nutrientes: Nitrógeno y Azufre solubles</li>
+                                    <li>Agua y aditivos inertes c.s.p. 100 g</li>
+                                </ul>
+                            </div>
+                            <div class="tab-content-panel panel-aplicacion">
+                                Se aconseja incorporar al tanque como primer elemento antes del fitosanitario. Dosis: 0.5% a 1.5% del volumen de agua según dureza medida.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Producto 4: Domo Humecto -->
+                    <div class="product-card" id="prod-domo-humecto">
+                        <div class="product-icon"><i class="fa-solid fa-arrows-to-dot"></i></div>
+                        <h3 class="product-name">Domo Humecto</h3>
+                        <span class="product-category">Tensioactivo Humectante</span>
+                        <p class="product-tagline">Adherencia superior que evita el desperdicio foliar.</p>
+                        
+                        <div class="product-tabs">
+                            <ul class="tab-nav">
+                                <li><button class="tab-btn active" data-tab="detalles">Detalles</button></li>
+                                <li><button class="tab-btn" data-tab="composicion">Composición</button></li>
+                                <li><button class="tab-btn" data-tab="aplicacion">Aplicación</button></li>
+                            </ul>
+                            <div class="tab-content-panel panel-detalles active">
+                                Disminuye drásticamente la tensión superficial, incrementando el mojado foliar y evitando que la gota escurra al suelo. Garantiza un tamaño de impacto homogéneo.
+                            </div>
+                            <div class="tab-content-panel panel-composicion">
+                                <ul>
+                                    <li>Alcoholes grasos etoxilados: 30 g/100 g</li>
+                                    <li>Vehículo humectante e inertes c.s.p. 100 g</li>
+                                </ul>
+                            </div>
+                            <div class="tab-content-panel panel-aplicacion">
+                                Coadyuvante de uso general para optimizar aplicaciones de herbicidas en barbechos o post-emergencia. Dosis típica: 50 ml a 100 ml por 100 L de caldo.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- ==================== VISTA 3: LABORATORIO ==================== -->
+        <section id="view-laboratorio" class="view-section">
+            <!-- Hero Banner -->
+            <div class="hero-banner-lab">
+                <span class="badge">Laboratorio de Precisión</span>
+                <h1>Análisis Agronómico de Alta Calidad</h1>
+                <p>Ubicados en Arroyito, Córdoba. Ayudamos al productor a tomar decisiones inteligentes basadas en datos de química y biología.</p>
+            </div>
+
+            <div class="container">
+                <!-- Grid de Servicios -->
+                <div class="section-title-wrapper">
+                    <h2 class="section-title">Servicios Analíticos</h2>
+                    <p class="section-subtitle">Dos pilares fundamentales para proteger tu inversión en insumos.</p>
+                </div>
+                
+                <div class="services-layout">
+                    <!-- Servicio 1 -->
+                    <div class="service-card">
+                        <h3 class="service-title">Análisis de Agua para Pulverización</h3>
+                        <p class="service-desc">El agua representa más del 90% del caldo de aplicación. Medimos las variables críticas que afectan la efectividad química.</p>
+                        <ul class="service-list">
+                            <li>Determinación de Dureza Total (CaCO3)</li>
+                            <li>Medición de pH y conductividad eléctrica</li>
+                            <li>Medición de Sólidos Totales Disueltos (TDS)</li>
+                            <li>Curvas de dosificación a medida con Domo Max y Domo Control</li>
+                        </ul>
+                    </div>
+
+                    <!-- Servicio 2 -->
+                    <div class="service-card">
+                        <h3 class="service-title">Análisis de Calidad de Semillas</h3>
+                        <p class="service-desc">Asegura la implantación y evita fallas de stand en tus lotes analizando la viabilidad biológica previa.</p>
+                        <ul class="service-list">
+                            <li>Poder Germinativo (PG) en cámara</li>
+                            <li>Energía Germinativa (EG)</li>
+                            <li>Humedad interna de la semilla</li>
+                            <li>Pureza física y Peso de Mil Semillas (PMS)</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Simulador de Dosificación de Agua -->
+                <div class="section-title-wrapper" style="margin-top: 3rem;">
+                    <h2 class="section-title">Simulador de Corrección de Agua</h2>
+                    <p class="section-subtitle">Calcula de forma automática la dosis requerida de coadyuvantes en base a los parámetros de dureza y pH de tu pozo.</p>
+                </div>
+
+                <div class="simulator-container">
+                    <div class="calculator-grid">
+                        <div class="form-group">
+                            <label for="input-hardness">Dureza del agua (ppm CaCO3)</label>
+                            <input type="number" id="input-hardness" placeholder="Ej: 280" value="280" min="0">
+                        </div>
+                        <div class="form-group">
+                            <label for="input-ph">pH del agua</label>
+                            <input type="number" id="input-ph" placeholder="Ej: 7.8" value="7.8" step="0.1" min="0" max="14">
+                        </div>
+                        <div class="form-group">
+                            <label for="input-volume">Volumen del Tanque (Litros)</label>
+                            <input type="number" id="input-volume" placeholder="Ej: 3000" value="3000" min="1">
+                        </div>
+                        <button class="btn-calculate" id="btn-calculate">Calcular Recomendación</button>
+                    </div>
+
+                    <!-- Caja de Resultados -->
+                    <div class="result-box" id="result-box">
+                        <h4 class="result-title"><i class="fa-solid fa-clipboard-check"></i> Reporte de Dosificación Recomendado</h4>
+                        
+                        <div class="result-item">
+                            <span>Parámetros ingresados:</span>
+                            <span id="res-hardness">--</span>
+                        </div>
+                        <div class="result-item">
+                            <span>pH medido:</span>
+                            <span id="res-ph">--</span>
+                        </div>
+                        <div class="result-item">
+                            <span>Capacidad del tanque:</span>
+                            <span id="res-volume">--</span>
+                        </div>
+                        <div class="result-item" style="border-top: 1px solid rgba(0,0,0,0.08); padding-top: 1rem;">
+                            <span>Dosis de <strong>Domo Max</strong> (Corrector de dureza):</span>
+                            <span id="res-domo-max">--</span>
+                        </div>
+                        <div class="result-item">
+                            <span>Dosis de <strong>Domo Control</strong> (Acidificante/Humectante):</span>
+                            <span id="res-domo-control">--</span>
+                        </div>
+                        <div class="result-item" style="flex-direction: column; align-items: flex-start; gap: 0.5rem; border-top: 1px solid rgba(0,0,0,0.08); padding-top: 1rem;">
+                            <span style="font-weight: 600; color: var(--color-dark);">Recomendación Agronómica:</span>
+                            <p id="res-text" style="font-size: 0.9rem; color: var(--color-dark-muted); font-weight: 300; line-height: 1.5;"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- ==================== VISTA 4: NOSOTROS ==================== -->
+        <section id="view-nosotros" class="view-section">
+            <div class="hero-banner">
+                <span class="badge">Nuestra Empresa</span>
+                <h1>Compromiso con el Campo</h1>
+                <p>Somos una PYME familiar orientada al desarrollo e innovación tecnológica para el sector agroindustrial.</p>
+            </div>
+
+            <div class="container">
+                <div class="about-grid">
+                    <div class="about-text">
+                        <h3>Nuestra Trayectoria</h3>
+                        <p>
+                            Desde nuestros inicios en Arroyito, Córdoba, concebimos la fortaleza corporativa a través del trabajo codo a codo con el productor agropecuario. Nos esforzamos diariamente por aportar soluciones químicas y analíticas viables y efectivas.
+                        </p>
+                        <p>
+                            Nuestras actividades y decisiones de negocio se fundamentan en la Responsabilidad Social Empresaria, garantizando productos eficaces y sustentables que protegen los recursos naturales y humanos de cada región productiva.
+                        </p>
+                    </div>
+
+                    <div class="mvs-grid">
+                        <div class="mvs-card">
+                            <h4><i class="fa-solid fa-tint"></i> Misión</h4>
+                            <p>Elevar la productividad agroindustrial aplicando ciencia y tecnología para un desarrollo agrícola sustentable, cuidando el entorno humano y ambiental.</p>
+                        </div>
+                        <div class="mvs-card">
+                            <h4><i class="fa-solid fa-eye"></i> Visión</h4>
+                            <p>Para el año 2026, ser el referente de innovación y calidad en servicios agrícolas de la región central del país, impulsando la toma de decisiones basada en datos químicos y biológicos.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Alianzas Estratégicas -->
+                <div class="alliances-wrapper">
+                    <h2 class="section-title">Alianzas Estratégicas</h2>
+                    <p class="section-subtitle">Trabajamos en conjunto para brindar soporte integral al productor.</p>
+                    
+                    <div class="alliances-grid">
+                        <div class="alliance-card">
+                            <img src="assets/biocen.png" alt="Zanoy Agro" class="alliance-logo-img">
+                            <h5 class="alliance-name">ZANOY Agro</h5>
+                            <p class="alliance-desc">Centro de Servicio Monsanto y representante de Dekalb.</p>
+                        </div>
+                        <div class="alliance-card">
+                            <img src="assets/logo2.png" alt="Bertone Maquinarias" class="alliance-logo-img">
+                            <h5 class="alliance-name">BERTONE Maquinarias</h5>
+                            <p class="alliance-desc">Concesionario oficial Massey Ferguson con más de 45 años.</p>
+                        </div>
+                        <div class="alliance-card">
+                            <img src="assets/biocen.png" alt="Máxima Plus" class="alliance-logo-img">
+                            <h5 class="alliance-name">MAXIMA PLUS</h5>
+                            <p class="alliance-desc">Venta de semillas, fitosanitarios y fertilizantes de alta calidad.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- ==================== VISTA 5: CONTACTO ==================== -->
+        <section id="view-contacto" class="view-section">
+            <div class="hero-banner">
+                <span class="badge">Contacto Directo</span>
+                <h1>Hablemos</h1>
+                <p>Resolveremos tus dudas técnicas y cotizaremos tus requerimientos comerciales a la brevedad.</p>
+            </div>
+
+            <div class="container">
+                <div class="contact-layout">
+                    <div class="contact-info-column">
+                        <h3>Información de Contacto</h3>
+                        <p style="color: var(--color-dark-muted); margin-bottom: 2rem;">Puedes visitarnos o llamarnos directamente para acordar la entrega de muestras al laboratorio.</p>
+                        
+                        <ul class="contact-info-list">
+                            <li>
+                                <i class="fa-solid fa-map-location-dot"></i>
+                                <div>
+                                    <strong>Dirección:</strong><br>
+                                    Av. Marcial Vaudagna 154, Arroyito, Córdoba, Argentina.
+                                </div>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-phone-volume"></i>
+                                <div>
+                                    <strong>Teléfono:</strong><br>
+                                    03576 - 452555
+                                </div>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-envelope-open-text"></i>
+                                <div>
+                                    <strong>Correo Electrónico:</strong><br>
+                                    laboratorio@biocen.com.ar
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Formulario de Contacto Odoo-like -->
+                    <form class="contact-form" id="prototype-contact-form">
+                        <div class="form-group">
+                            <label for="form-area">Departamento Destino</label>
+                            <select id="form-area" required>
+                                <option value="Productos">Productos (Agroquímicos & Barbechos)</option>
+                                <option value="Laboratorio">Laboratorio (Análisis de Agua/Semillas)</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="form-name">Nombre Completo</label>
+                            <input type="text" id="form-name" placeholder="Ej: Juan Pérez" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="form-email">Correo Electrónico</label>
+                            <input type="email" id="form-email" placeholder="Ej: juan@campo.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="form-msg">Mensaje / Consulta</label>
+                            <textarea id="form-msg" rows="5" placeholder="Escriba aquí los detalles de su lote o tipo de muestra..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn-send">Enviar Solicitud</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER UNIFICADO -->
+    <footer>
+        <div class="footer-content">
+            <img src="assets/logo2.png" alt="Biocen S.A." class="footer-logo">
+            <ul class="footer-nav">
+                <li><a href="#" data-view="productos">Productos</a></li>
+                <li><a href="#" data-view="laboratorio">Laboratorio</a></li>
+                <li><a href="#" data-view="nosotros">Nosotros</a></li>
+                <li><a href="#" data-view="contacto">Contacto</a></li>
+            </ul>
+            <div class="footer-socials">
+                <a href="https://www.youtube.com/@biocen_sa" target="_blank" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+                <a href="https://www.instagram.com/biocensa/" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.facebook.com/biocen.sa" target="_blank" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            </div>
+            <p class="copyright">
+                &copy; 2026 Biocen S.A. Todos los derechos reservados. <br>
+                Ubicación: Arroyito, Córdoba.
+            </p>
+        </div>
+    </footer>
+
+    <!-- scripts -->
+    <script src="main.js"></script>
+</body>
+</html>
